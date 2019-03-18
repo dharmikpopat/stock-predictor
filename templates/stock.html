@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block body%}
+ <div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="http://jageshwarastro.com/Home/wp-content/uploads/2017/03/Stock-market-Preview.jpg" height="600" width="1360" alt="Los Angeles">
+    </div>
+    <div class="carousel-item">
+      <img src="http://yoga159.ru/vytn/caclfoqosi/image16491206.jpg" height="600" width="1360" alt="Chicago">
+    </div>
+    <div class="carousel-item">
+      <img src="http://www.urwallpapers.com/download/10195/hd_wallpaper_new_york_nasdaq_stock_market.jpeg" height="600" width="1360" alt="New York">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+{% endblock %}

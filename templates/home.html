@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block body%}
+ <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-5">"Welcome to Stock Predictor!"</h1>
+  </div>
+</div>
+<div class="container">
+      <h2 style="text-align">Select Company<br></h2><br>
+    <div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle style:align" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"  aria-expanded="false">
+    Select Company
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
+    <a class="dropdown-item" href="/apple">Apple</a>
+    <a class="dropdown-item" href="/alphabet">Alphabet</a>
+    <a class="dropdown-item" href="/amazon">Amazon</a>
+    <a class="dropdown-item" href="google">Google</a>
+  </div>
+</div>
+</div>
+{% endblock %}

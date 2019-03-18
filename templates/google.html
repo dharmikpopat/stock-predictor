@@ -1,0 +1,71 @@
+{% extends 'layout.html' %}
+
+{% block body%}
+  
+<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2",
+	title:{
+		text: "Simple Line Chart"
+	},
+	axisY:{
+		includeZero: false
+	},
+	data: [{        
+		type: "line",       
+		dataPoints: [
+			{ y: 172  },
+			{ y: 170 },
+			{ y: 164 , indexLabel: "lowest",markerColor: "DarkSlateGrey", markerType: "cross"},
+			{ y: 169 },
+			{ y: 171 },
+			{ y: 168   },
+			{ y: 172 },
+			{ y: 174 },
+			{ y: 170 },
+			{ y: 173.11 },
+			{ y: 180 },
+			{ y: 176.23 },
+            { y: 175 },
+			{ y: 174.15 },
+			{ y: 179 },
+            { y: 180.50 , indexLabel: "highest",markerColor: "red", markerType: "triangle"},
+			{ y: 178.97 },
+			{ y: 179.83 }
+              
+
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<div class="container" style="margin-top:2% ">
+    <div class="row">
+        
+    <div class="col">
+   
+    </div>
+
+    <div class="col">     
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" onclick='window.location="/articlesc"'>
+  Predict Next Day's Value
+</button>
+
+
+
+    </div>
+    <div class="col">
+      
+    </div>
+ 
+</div>
+</div>
+
+{% endblock %}
